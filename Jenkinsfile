@@ -5,7 +5,7 @@ pipeline {
   }
 stages{
   stage('Intialized'){
-    steps {
+    step {
       ''' 
         echo "PATH = ${PATH}"
         echo "M2_HOME"= $ {M2_HOME}"
@@ -13,7 +13,7 @@ stages{
     }
   }
    stage('Build'){
-     steps{
+     step{
       sh 'mvn clean package'
     }
    }  
