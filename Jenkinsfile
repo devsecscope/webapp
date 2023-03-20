@@ -4,7 +4,7 @@ pipeline {
     maven 'Maven'
   }
 stages{
-  satge('Intialization'){
+  satge('Intialized'){
     steps {
       ''' 
         echo "PATH = ${PATH}"
